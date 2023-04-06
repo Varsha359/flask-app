@@ -46,7 +46,7 @@ def detect_text_endpoint():
 
 @app.route('/predict-medicines', methods=['GET'])
 def predict_medicines_endpoint():
-    response = requests.get('http://192.168.29.151:5000/detect-text')
+    response = requests.get('https://pharmafind.onrender.com/detect-text')
     # Check if the request was successful
     if response.status_code == 200:
         result = []
@@ -92,5 +92,3 @@ def recognize_text_endpoint():
     result.append("hi")
     # return the output of the script
     return {'output': result}
-
-
