@@ -52,7 +52,7 @@ def predict_medicines_endpoint():
         result = []
         # Get a list of all files in the directory
         print("called recognize")
-        image_dir = r'C:\Users\gajul\Downloads\SimpleHTR\output\uploaded_crops'
+        image_dir = '../output/uploaded_crops'
         file_list = os.listdir(image_dir)
         # Filter the list to include only image files
         image_files = [os.path.join(image_dir, f)
@@ -78,7 +78,7 @@ def recognize_text_endpoint():
     result = []
     # Get a list of all files in the directory
     print("called recognize")
-    image_dir = r'C:\Users\gajul\Downloads\SimpleHTR\output\uploaded_crops'
+    image_dir = '../output/uploaded_crops'
     file_list = os.listdir(image_dir)
     # Filter the list to include only image files
     image_files = [os.path.join(image_dir, f)

@@ -20,7 +20,7 @@ def detect_text():
     craft.unload_refinenet_model()
     print("detected")
     
-    image_dir = r'C:\Users\gajul\Downloads\SimpleHTR\output\uploaded_crops'
+    image_dir = '../output/uploaded_crops'
     file_list = os.listdir(image_dir)
     # Filter the list to include only image files
     image_files = [os.path.join(image_dir, f)
